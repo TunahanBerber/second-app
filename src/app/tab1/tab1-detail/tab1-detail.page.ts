@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular/providers/alert-controller';
 
 @Component({
   selector: 'app-tab1-detail',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1DetailPage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+   constructor() {}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
 }

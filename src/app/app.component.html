@@ -1,3 +1,35 @@
 <ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Şefik</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="./tab1/tab1-detail">Çay</ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="">Kahve</ion-item>
+        </ion-menu-toggle>
+        <ion-item>Su</ion-item>
+        <ion-item>Kaburga</ion-item>
+        <ion-item>Tost</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-menu-toggle>
+        <ion-button>Click to open the menu</ion-button>
+      </ion-menu-toggle>
+    </ion-content>
+  </div>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
